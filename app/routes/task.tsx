@@ -1,19 +1,17 @@
+import TaskSection from '~/components/TaskSection'
+
 export default function Task() {
   return (
-    <div>
-      <div className='container'>
-        <header>
-          <div>h1</div>
-          <button>add</button>
+    <body className='flex flex-col items-center'>
+      <div className='task-box'>
+        <header className='header'>
+          <div className='text-4xl'>Task Tracker</div>
+          <button className='btn btn-black'>add</button>
         </header>
-      </div>
-      <div className='task-section'>
-        <div className='task'>
-          <div>topic</div>
-          <div>description</div>
-          <div>time</div>
+        <div className='task-section '>
+          <TaskSection />
         </div>
       </div>
-    </div>
+    </body>
   )
 }
